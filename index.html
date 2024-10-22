@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <!-- css file link -->
+     <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Contact form SKILLHUB
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us to improve the platform.
+            </p>
+        </header>
+        <form action="" id="contact-form">
+            <!-- Text section -->
+             <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formcontrol" placeholder="Enter your name" required>
+             </div>
+             <!-- end the text section -->
+            
+             <!-- Type email section -->
+             <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formcontrol" placeholder="Enter your email" required>
+             </div>
+             <!-- End of email section -->
+              
+              <!-- Type number section -->
+              <div class="form-group">
+                <label for="number">Number</label>
+                <input type="number" name="number" id="number" class="formcontrol" placeholder="Enter your number" required>
+             </div>
+               <!-- end of number section -->
+
+               <!-- Address section -->
+               <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formcontrol" placeholder="Enter your address" required>
+             </div>
+               <!-- End of address -->
+
+               <!-- select selection -->
+             <div class="form-group">
+                <p id="quest">Which option best describe your current role ? </p>
+                <select name="role" id="dropdown" class="formcontrol" required>
+                    <option value="" disabled selected>Select current role
+                    </option>
+                    <option value="Student">Student
+                    </option>
+                    <option value="Employee">Employee
+                    </option>
+                    <option value="Jobseeker">Jobseeker
+                    </option>
+                    <option value="Other">Other
+                    </option>
+                </select>
+             </div>
+               <!-- end of select selection -->
+
+                <!-- radio button started -->
+                 <div class="form-group">
+                    <p id="request">How you come to know about SKILLHUB</p>
+                    <label for="">
+                        <input type="radio" name="source" value="friends" class="inputRadio" checked>Friends
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="source" value="Company website" class="inputRadio">Company website
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="social-media" class="inputRadio">social-media
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="Newspaper" class="inputRadio">Newspaper
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="other" class="inputRadio">Other
+                    </label>
+                 </div>
+                 <!-- End of radio button -->
+
+                  <!-- checkbox section -->
+                  <div class="form-group">
+                    <p id="quest">Would you like to know more about which domain ?</p>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev">Backend Developer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev">Frontend Developer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="app-dev">Application Developer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="java-dev">java Developer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="other">Other
+                    </label>
+                  <!-- end of checkbox selection -->
+
+                  <!-- Textarea section  -->
+                    <div class="form-group">
+                        <p id="quest">
+                            Give us your feedback
+                        </p>
+                        <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here"></textarea>
+                    </div> 
+                  <!-- End of textarea section  -->
+
+                   <!-- submit section -->
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="btn">Submit
+                        </button>
+                    </div>
+                   
+        </form>
+    </div>
+</body>
+</html>
